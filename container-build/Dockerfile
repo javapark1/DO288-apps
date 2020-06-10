@@ -11,7 +11,7 @@ LABEL io.k8s.description="A basic Apache HTTP Server child image, uses ONBUILD" 
 RUN sed -i "s/Listen 80/Listen 8080/g" /etc/httpd/conf/httpd.conf
 
 RUN chgrp -R 0 /var/log/httpd && \
-    chmod -R g=u /varlog/httpd /var/run/httpd
+    chmod -R g=u /var/log/httpd /var/run/httpd
 
 # Add an unprivileged user. Red Hat convention: 1001
 USER 1001
