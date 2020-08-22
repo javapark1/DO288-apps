@@ -1,0 +1,14 @@
+kind: "BuildConfig"
+apiVersion: "v1"
+metadata:
+  name: "simple-pipeline"
+spec:
+  source:
+    contextDir: simple-pipeline
+    git:
+      uri: "https://github.com/javapark1/DO288-apps"
+      ref: "simple-pipeline"
+  strategy:
+    jenkinsPipelineStrategy:
+      jenkinsfilePath: Jenkinsfile
+    type: JenkinsPipeline
