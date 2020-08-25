@@ -1,0 +1,15 @@
+kind: "BuildConfig"
+apiVersion: "v1"
+metadata:
+  name: "custom-pipeline"
+spec:
+  source:
+    type: Git
+    contextDir: books
+    git:
+      uri: "https://github.com/javapark1/DO288-apps"
+      ref: "custom-pipeline"
+  strategy:
+    jenkinsPipelineStrategy:
+      jenkinsfilePath: jenkins/Jenkinsfile
+    type: JenkinsPipeline
