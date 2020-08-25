@@ -8,7 +8,7 @@
     "source": {
       "type": "Git",
       "git": {
-        "url": "https://github.com/javapark1/DO288-apps.git",
+        "uri": "https://github.com/javapark1/DO288-apps.git",
         "ref": "customer-pipeline"
       },
       "contextDir": "books"
