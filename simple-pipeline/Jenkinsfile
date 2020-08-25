@@ -3,6 +3,8 @@ pipeline {
         // set a timeout of 30 minutes for this pipeline
         timeout(time: 30, unit: 'MINUTES')
     }
+    // agent specifies the execution context (where the pipeline will urn for 
+    /// the entire pipeline.
     agent {
       node {
         label 'master'
